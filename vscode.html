@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Joinville Alimentos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: #fff;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #c62828;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ffccbc;
+    }
+
+    main {
+      padding: 40px 20px;
+    }
+
+    section {
+      max-width: 1200px;
+      margin: 0 auto 60px auto;
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+
+    section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    section h2 {
+      font-size: 2rem;
+      color: #c62828;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    section p, section ul {
+      font-size: 1.1rem;
+      color: #555;
+      max-width: 800px;
+      margin: 0 auto 20px auto;
+    }
+
+    section ul {
+      list-style: disc;
+      padding-left: 40px;
+    }
+
+    section img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin: 20px auto;
+      border-radius: 10px;
+    }
+
+    .buttons {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #c62828;
+      color: white;
+      padding: 10px 20px;
+      margin: 10px;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #e53935;
+      transform: scale(1.05);
+    }
+
+    footer {
+      background: #f5f5f5;
+      color: #777;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      header h1 {
+        font-size: 2rem;
+      }
+
+      section h2 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Joinville Alimentos</h1>
+    <nav>
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#hamburguer">Hambúrguer Artesanal</a></li>
+        <li><a href="#produtos">Produtos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="sobre">
+      <h2>Sobre Nós</h2>
+      <p>
+        A Joinville Alimentos é uma empresa especializada em produtos artesanais e sob encomenda, com foco em qualidade, sabor e atendimento personalizado. Localizada em Joinville (SC), atende com responsabilidade e amor pela comida.
+      </p>
+    </section>
+
+    <section id="hamburguer">
+      <h2>Hambúrguer Artesanal</h2>
+      <p>
+        Produzido com cortes selecionados de carne, nosso hambúrguer artesanal oferece suculência e sabor incomparáveis. Ideal para quem busca qualidade e autenticidade no lanche ou refeição.
+      </p>
+      <img src="https://via.placeholder.com/600x400?text=Hamburguer+Artesanal" alt="Hambúrguer Artesanal" />
+    </section>
+
+    <section id="produtos">
+      <h2>Nossos Produtos</h2>
+      <ul>
+        <li>Hambúrgueres artesanais bovinos e suínos</li>
+        <li>Linguiças artesanais</li>
+        <li>Carne defumada</li>
+        <li>Presuntos e embutidos</li>
+        <li>Produtos sob encomenda</li>
+      </ul>
+    </section>
+
+    <section id="contato">
+      <h2>Fale Conosco</h2>
+      <p>Endereço: Rua Realcy Silveira, 894 – Aventureiro, Joinville – SC</p>
+      <p>Telefone/WhatsApp: <a href="https://wa.me/5547999154936" target="_blank">(47) 99915-4936</a></p>
+      <p>Email: <a href="mailto:nicollyribeiro037@gmail.com">nicollyribeiro037@gmail.com</a></p>
+      <p>Instagram: <a href="https://www.instagram.com/joinvillealimentos/" target="_blank">@joinvillealimentos</a></p>
+      <div class="buttons">
+        <a href="https://wa.me/5547999154936" class="btn">WhatsApp</a>
+        <a href="https://www.instagram.com/joinvillealimentos/" class="btn" target="_blank">Instagram</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Joinville Alimentos LTDA | CNPJ: 41.234.044/0001-63</p>
+  </footer>
+
+  <script>
+    const sections = document.querySelectorAll('section');
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, {
+      threshold: 0.2
+    });
+
+    sections.forEach(section => {
+      observer.observe(section);
+    });
+  </script>
+</body>
+</html>
